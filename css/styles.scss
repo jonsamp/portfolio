@@ -4,6 +4,7 @@
 html {
   font-family: -apple-system, BlinkMacSystemFont, sans-serif;
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  line-height: 1.5rem;
 }
 
 a {
@@ -92,14 +93,12 @@ section {
   flex-wrap: wrap;
   .twitter,
   .instagram {
-    height: 40vh;
-    overflow: auto;
+    overflow: hidden;
     width: 100%;
     margin-right: 2%;
     margin-bottom: 2%;
     @media (min-width: 700px) {
       flex: 1;
-      height: 80vh;
     }
   }
 
