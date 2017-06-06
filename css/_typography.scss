@@ -23,13 +23,17 @@
 
 $min_width: 320px;
 $max_width: 1200px;
-$min_font: 16px;
-$max_font: 20px;
+$min_font: 20px;
+$max_font: 24px;
 
-h1 { font-size: 2em; }
-h2 { font-size: 1.5em; }
-h3 { font-size: 1.17em; }
-h4 { font-size: 1.12em; }
-h5 { font-size: .83em; }
-h6 { font-size: .75em; }
-p { font-size: 1em;}
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 {
+  font-size: 1.17rem;
+  font-weight: normal;
+  line-height: 2rem;
+}
+h4 { font-size: 1.12rem; }
+h5 { font-size: .83rem; }
+h6 { font-size: .75rem; }
+p { font-size: 1rem;}

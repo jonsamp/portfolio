@@ -1,10 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Capriola');
+
+
+
 @import "typography";
 @import "colors";
 
-html {
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+html, body {
+  font-family: 'Capriola', -apple-system, BlinkMacSystemFont, sans-serif;
   @include fluid-type($min_width, $max_width, $min_font, $max_font);
   line-height: 1.5rem;
+  background-color: $dark-4;
+  color: $dark-1;
 }
 
 a {
@@ -13,19 +20,24 @@ a {
   font-weight: bold;
 
   &:hover {
-    text-decoration: underline;
+    color: lighten($primary, 10%);
+    transition: 0.15s;
   }
 }
 
-.main,
-.entire-life {
+h1,
+h2 {
+  color: white;
+}
+
+.main {
   max-width: 1200px;
   width: 90%;
   margin: auto;
 }
 
 section {
-  margin-bottom: 4rem;
+  margin-bottom: 6rem;
 }
 
 .name {
@@ -34,9 +46,9 @@ section {
   margin-top: 2rem;
   .avatar {
     border-radius: 0.25rem;
-    border: 0.5rem solid $grey-1;
+    border: 0.5rem solid $dark-2;
     padding-bottom: 1rem;
-    background-color: $grey-1;
+    background-color: $dark-2;
     margin-right: 1rem;
     height: 4rem;
   }
@@ -46,30 +58,43 @@ section {
   max-width: 33rem;
 }
 
+.projects {
+  background: rgb(41, 47, 58);  /* fallback for old browsers */
+  // background: -webkit-linear-gradient(to top, rgb(41, 47, 58), #1a1a1a);  /* Chrome 10-25, Safari 5.1-6 */
+  // background: linear-gradient(to top, rgb(41, 47, 58), #1a1a1a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 2rem 0;
+}
+
 .project-cards {
   display: flex;
-  flex-wrap: wrap;
-  .project {
+  flex-direction: column;
+
+  .project-card {
     display: flex;
-    width: 100%;
-    background-color: $grey-1;
-    padding: 1.5rem;
+    flex: 1;
+    background-color: darken(rgba(34, 34, 34, 0.5), 5%);
     border-radius: 0.25rem;
     margin-bottom: 2%;
     margin-right: 2%;
     overflow: hidden;
 
-    @media (min-width: 700px) {
-      flex: 1;
+    &:hover {
+      background-color: darken(rgba(34, 34, 34, 0.5), 10%);
+      transition: 0.15s;
     }
+  }
+
+  .project {
+    display: flex;
+    color: $grey-1;
+    font-weight: normal;
+    padding: 1.5rem;
+
     .description {
       margin-left: 1rem;
       h3 {
         margin-top: 0;
-      }
-      img {
-        height: 0.8em;
-        border-radius: 0;
+        line-height: 1rem;
       }
     }
 
@@ -80,10 +105,13 @@ section {
 
     p {
       max-width: 30rem;
+      font-size: 0.75rem;
+      line-height: 1.25rem;
+      margin: 0.25rem 0;
     }
 
     a {
-      color: darken($primary, 5%);
+      color: $primary;
     }
   }
 }
@@ -121,7 +149,7 @@ section {
     }
 
     .caption {
-      background-color: $grey-1;
+      background-color: $dark-3;
       padding: 1em;
       padding-bottom: 0.5em;
       font-size: 0.8em;
@@ -133,6 +161,13 @@ section {
   }
 }
 
-.entire-life h2 {
-  margin-bottom: 0;
+.entire-life {
+  background-color: white;
+  padding: 2rem 0;
+  h2 {
+    color: $dark-4;
+    max-width: 90%;
+    margin: auto;
+  }
+
 }
