@@ -7,8 +7,26 @@
 		"uuidString": "777C2F36-9D97-424F-A155-2D17AF95C370"
 		}
 	],
-"creatorBuild": "25813",
+"creatorBuild": "25849",
 "files": {
+	"\/.sass-cache\/0d5328b595a025f01b202c4a59b6183674077cee\/_colors.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/.sass-cache\/0d5328b595a025f01b202c4a59b6183674077cee\/_colors.scssc",
+		"oF": 0
+		},
+	"\/.sass-cache\/0d5328b595a025f01b202c4a59b6183674077cee\/_typography.scssc": {
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/.sass-cache\/0d5328b595a025f01b202c4a59b6183674077cee\/_typography.scssc",
+		"oF": 0
+		},
+	"\/.sass-cache\/0d5328b595a025f01b202c4a59b6183674077cee\/styles.scssc": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.sass-cache\/0d5328b595a025f01b202c4a59b6183674077cee\/styles.scssc",
+		"oF": 0
+		},
 	"\/CNAME": {
 		"ft": 8192,
 		"oA": 2,
@@ -71,6 +89,12 @@
 		"oF": 0,
 		"oS": 0
 		},
+	"\/css\/styles.css.map": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/css\/styles.css.map",
+		"oF": 0
+		},
 	"\/css\/styles.scss": {
 		"aP": 1,
 		"bl": 0,
@@ -112,15 +136,14 @@
 		"oAP": "\/favicon.ico",
 		"oF": 0
 		},
-	"\/images\/avatar.png": {
-		"ft": 32768,
-		"iS": 11473,
+	"\/images\/avatar.jpg": {
+		"ft": 16384,
+		"iS": 32992,
 		"oA": 0,
-		"oAP": "\/images\/avatar.png",
+		"oAP": "\/images\/avatar.jpg",
 		"oF": 0,
-		"oIPL": 1,
-		"opt": 1,
-		"oT": 1,
+		"oIPL": 0,
+		"opt": 0,
 		"q": 100
 		},
 	"\/images\/codecademy-syntax.png": {
@@ -192,6 +215,17 @@
 		"iS": 11860,
 		"oA": 0,
 		"oAP": "\/images\/me.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/images\/vent.png": {
+		"ft": 32768,
+		"iS": 240036,
+		"oA": 0,
+		"oAP": "\/images\/vent.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -2185,6 +2219,7 @@
 		},
 	"languageDefaultsUserDefined": [
 		],
+	"overrideExternalServerCSS": 0,
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",

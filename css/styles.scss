@@ -68,10 +68,21 @@ section {
 .project-cards {
   display: flex;
   flex-direction: column;
+	flex-wrap: wrap;
+	height: 100vh;
+	font-size: 0;
+  @media (max-width: 765px) {
+    height: auto;
+  }
 
   .project-card {
-    display: flex;
-    flex: 1;
+    width: 50%;
+
+    @media (max-width: 765px) {
+      width: 100%;
+    }
+    min-height: 25vh;
+
     background-color: darken(rgba(34, 34, 34, 0.5), 5%);
     border-radius: 0.25rem;
     margin-bottom: 2%;
