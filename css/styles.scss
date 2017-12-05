@@ -74,17 +74,17 @@ section {
   }
 
   .project-card {
-    width: 50%;
+    width: calc(50% - 1rem);
 
     @media (max-width: 765px) {
-      width: 100%;
+      width: calc(100% - 1rem);
     }
     min-height: 25vh;
 
     background-color: darken(rgba(34, 34, 34, 0.5), 5%);
-    border-radius: 0.25rem;
-    margin-bottom: 2%;
-    margin-right: 2%;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
     overflow: hidden;
 
     &:hover {
@@ -101,7 +101,9 @@ section {
 
     .description {
       margin-left: 1rem;
+      color: rgba($grey-1, 0.5);
       h3 {
+        color: rgba($grey-1, 1);
         margin-top: 0;
         margin-bottom: 0;
         line-height: 1.5rem;
@@ -109,9 +111,9 @@ section {
     }
 
     img {
-      border-radius: 0.25rem;
-      height: 2.5rem;
-      width: 2.5rem;
+      border-radius: 0.5rem;
+      height: 3rem;
+      width: 3rem;
     }
 
     p {
@@ -153,7 +155,7 @@ section {
       }
     }
     .photo {
-      border-radius: 0.25rem;
+      border-radius: 0.5rem;
       width: 100%;
       border-bottom-left-radius: 0;
       border-bottom-right-radius: 0;
@@ -166,8 +168,8 @@ section {
       font-size: 0.8em;
       margin-top: -1em;
       margin-bottom: 1em;
-      border-bottom-left-radius: 0.25em;
-      border-bottom-right-radius: 0.25em;
+      border-bottom-left-radius: 0.5em;
+      border-bottom-right-radius: 0.5em;
     }
   }
 }
