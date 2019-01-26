@@ -1,113 +1,188 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Jon Samp</title>
-  <link href="css/normalize-min.css" rel="stylesheet" />
-  <link href="css/styles.css" rel="stylesheet" />
-</head>
+    <title>Jon Samp</title>
+    <meta name="apple-mobile-web-app-title" content="Jon Samp" />
+    <meta
+      name="description"
+      content="Software engineer, @codecademy. Love JavaScript & React Native. Coffee person. LFK ➡️ CHI ➡️ NYC."
+    />
+    <meta
+      name="keywords"
+      content="javascript, react native, react, coffee, single origin, vent, date-streaks"
+    />
 
-<body>
-  <section class="main">
-    <section class="name">
-      <div class="header-container">
-        <img src="images/avatar.jpg" class="avatar" alt="Jon Samp, pictured after the 2017 Brooklyn Half Marathon." />
-        <div>
-          <h1>Jon Samp</h1>
-          <div class="social-media-container">
-            <a href="https://github.com/jonsamp" target="_blank">
-              <div class="social-media-button">
-                <svg aria-labelledby="simpleicons-github-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-github-icon">GitHub icon</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" fill="#cccccc"/></svg>
-              </div>
-            </a>
+    <meta property="og:title" content="Jon Samp" />
+    <meta property="og:url" content="http://jon-samp.com" />
+    <meta
+      property="og:image"
+      content="https://pbs.twimg.com/profile_images/1042074972779413510/6bxBya0I_400x400.jpg"
+    />
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta
+      property="og:description"
+      content="Software engineer, @codecademy. Love JavaScript & React Native. Coffee person. LFK ➡️ CHI ➡️ NYC."
+    />
 
-            <a href="https://twitter.com/@jonsamp" target="_blank">
-              <div class="social-media-button">
-                <svg aria-labelledby="simpleicons-twitter-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title id="simpleicons-twitter-icon">Twitter icon</title><path d="M23.954 4.569c-.885.389-1.83.654-2.825.775 1.014-.611 1.794-1.574 2.163-2.723-.951.555-2.005.959-3.127 1.184-.896-.959-2.173-1.559-3.591-1.559-2.717 0-4.92 2.203-4.92 4.917 0 .39.045.765.127 1.124C7.691 8.094 4.066 6.13 1.64 3.161c-.427.722-.666 1.561-.666 2.475 0 1.71.87 3.213 2.188 4.096-.807-.026-1.566-.248-2.228-.616v.061c0 2.385 1.693 4.374 3.946 4.827-.413.111-.849.171-1.296.171-.314 0-.615-.03-.916-.086.631 1.953 2.445 3.377 4.604 3.417-1.68 1.319-3.809 2.105-6.102 2.105-.39 0-.779-.023-1.17-.067 2.189 1.394 4.768 2.209 7.557 2.209 9.054 0 13.999-7.496 13.999-13.986 0-.209 0-.42-.015-.63.961-.689 1.8-1.56 2.46-2.548l-.047-.02z" fill="#cccccc"/></svg>
-              </div>
-            </a>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:creator" content="@jonsamp" />
+    <meta name="twitter:title" content="Jon Samp" />
+    <meta
+      name="twitter:description"
+      content="Software engineer, @codecademy. Love JavaScript & React Native. Coffee person. LFK ➡️ CHI ➡️ NYC."
+      <meta
+      name="twitter:image"
+      content="https://pbs.twimg.com/profile_images/1042074972779413510/6bxBya0I_400x400.jpg"
+    />
+
+    <link rel="apple-touch-icon-precomposed" href="icon.png" />
+    <link rel="icon" type="image/png" href="icon-small.png" />
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fruktur"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body class="container">
+    <header>
+      <h1><em>Jon Samp's</em> website</h1>
+      <p>
+        👋 Hi! I'm a software engineer and coffee person in New York City. I
+        work at <a href="https://codecademy.com">Codecademy</a>, and specialize
+        in JavaScript, React Native, and building beautiful user experiences.
+        This page attempts to list all of my recent projects and packages. I'm
+        also present on Twitter as
+        <a href="https://twitter.com/jonsamp">@jonsamp</a>, where I tweet about
+        coding and life in NYC. You can find my code on
+        <a href="https://www.github.com/jonsamp">GitHub</a>. I have a lovely dog
+        named Nikko, who has a must-see Instagram
+        <a href="https://instagram.com/nikko__dog">@nikko__dog</a>. Thanks for
+        stopping by!
+      </p>
+    </header>
+
+    <main>
+      <h2
+        style="transform: rotate(-8deg) translateY(8px); width: 3em; font-size: 1.75em"
+      >
+        New!
+      </h2>
+      <ul>
+        <li>
+          <h3>
+            <a
+              href="https://itunes.apple.com/us/app/codecademy-go/id1376029326?mt=8"
+              >Codecademy Go</a
+            >
+            <time>2019</time>
+          </h3>
+          <p>Practice and review coding anywhere, built with React Native.</p>
+        </li>
+        <li>
+          <h3>Codecademy Go Cast <time>Coming Soon!</time></h3>
+          <p>A podcast about building Codecademy Go.</p>
+        </li>
+      </ul>
+
+      <h2>Side Projects</h2>
+      <ul>
+        <li>
+          <div class="image-container">
+            <img src="images/single-origin.png" class="image" />
           </div>
-        </div>
-      </div>
-    </section>
+          <h3 class="title">
+            <a href="http://singleoriginapp.com/">Single Origin</a>
+            <time>2018</time>
+          </h3>
+          <p class="description">
+            Learn to brew specialty coffee with step by step instructions,
+            calculations, and timers. Now on iOS and Android.
+          </p>
+        </li>
+        <li>
+          <div class="image-container">
+            <img src="images/vent.png" class="image" />
+          </div>
+          <h3 class="title">
+            <a href="https://frozen-retreat-69078.herokuapp.com/">Vent</a>
+            <time>2017</time>
+          </h3>
+          <p class="description">
+            Journaling app with sentiment analysis. You write, it reveals your
+            subconscious. It's spontaneous self reflection.
+          </p>
+        </li>
+        <li>
+          <div class="image-container">
+            <img src="images/givvy.png" class="image" />
+          </div>
+          <h3 class="title">
+            <a href="http://givvyapp.com">Givvy</a> <time>2015</time>
+          </h3>
+          <p class="description">
+            Get incredible recommendations fom people you know.
+          </p>
+        </li>
+      </ul>
 
-    <section class="bio">
-      <h2>About me</h2>
-      <h3>Software engineer at <a href="https://www.codecademy.com/">Codecademy</a> in New York City. Passionate about JavaScript and React Native. I love coffee and have a dog named <a href="https://www.instagram.com/nikko__dog/">Nikko</a>.</h3>
-    </section>
-  </section>
-  <section class="projects">
-    <section class="main">
-      <h2>Projects</h2>
-      <div class="project-cards">
-        <div class="project-card">
-          <a href="https://github.com/jonsamp/date-streaks">
-            <div class="project">
-              <img src="images/date-streak-icon.png" />
-              <div class="description">
-                <h3>Date Streaks</h3>
-                <p>A Package to find a variety of streak metrics from a list of dates.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="project-card">
-          <a href="http://singleoriginapp.com/">
-            <div class="project">
-              <img src="images/single-origin.png" />
-              <div class="description">
-                <h3>Single Origin</h3>
-                <p>Learn to brew perfect coffee with a variety of specialty brew methods. Now on iOS and Android.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="project-card">
-          <a href="https://frozen-retreat-69078.herokuapp.com/">
-            <div class="project">
-              <img src="images/vent.png" />
-              <div class="description">
-                <h3>Vent</h3>
-                <p>Journaling app with sentiment analysis. You write, it reveals your subconscious. It's spontaneous self reflection.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="project-card">
-          <a href="http://givvyapp.com">
-            <div class="project">
-              <img src="images/givvy.png" />
-              <div class="description">
-                <h3>Givvy</h3>
-                <p>Get incredible recommendations fom people you know.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-        <div class="project-card">
-          <a href="https://atom.io/themes/codecademy-syntax-theme">
-            <div class="project">
-              <img src="images/codecademy-syntax.png" />
-              <div class="description">
-                <h3>Codecademy Syntax</h3>
-                <p>Use Codecademy syntax colors in Atom.</p>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-    </div>
-  </section>
+      <h2>Packages</h2>
+      <ul>
+        <li>
+          <h3>
+            <a href="https://github.com/jonsamp/react-native-expo-svg"
+              >react-native-expo-svg</a
+            >
+            <time>2019</time>
+          </h3>
+          <p>
+            Take a regular SVG, optimized it with SVGO, then creates an
+            Expo-friendly SVG JS file for React Native.
+          </p>
+        </li>
+        <li>
+          <h3>
+            <a href="https://github.com/jonsamp/date-streaks">date-streaks</a>
+            <time>2018</time>
+          </h3>
+          <p>Find a variety of streak metrics from a list of dates.</p>
+        </li>
+        <li>
+          <h3>
+            <a href="https://github.com/jonsamp/react-native-header-scroll-view"
+              >react-native-header-scroll-view</a
+            >
+            <time>2018</time>
+          </h3>
+          <p>
+            A React Native component that creates a Apple-esque large header
+            that fades in a smaller header as you scroll.
+          </p>
+        </li>
+        <li>
+          <h3>
+            <a href="https://github.com/jonsamp/react-native-fade"
+              >react-native-fade</a
+            >
+            <time>2018</time>
+          </h3>
+          <p>Fade components in and out in React Native with just a boolean.</p>
+        </li>
+      </ul>
 
-  <div class="entire-life">
-    <h2>Entire Life</h2>
-  </div>
-  <iframe id="entire-life-calendar" src="https://entire.life/jon?embed" width="100%" height="1000px" frameBorder="0" style="border: 0; background-image: url(https://cl.ly/kLqc/download/loading.svg); background-position: 50% 4em; background-size: 50px; background-repeat: no-repeat;"></iframe>
-  <script type="text/javascript" src="js/instafeed.min.js"></script>
-  <script type="text/javascript" src="js/main.js"></script>
-</body>
-
+      <h2>More...</h2>
+      <ul>
+        <li>
+          <h3><a href="https://medium.com/@jonsamp">Medium</a></h3>
+          <p>My medium is mostly technical writings.</p>
+        </li>
+      </ul>
+    </main>
+  </body>
 </html>
